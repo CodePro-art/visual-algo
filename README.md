@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# React: Week Project - Visualize Algorithms
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
+## Table of Contents:
 
-In the project directory, you can run:
+---
+### `Motivation:`
 
-### `npm start`
+Many students struggle to efficiently learn and remember new algorithms and apply them in their code. Visualizing data structures and algorithms through animation improves the learning process and sometimes simplifies the idea behind the code without even having the need to read code. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+### `Features:`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<ins>Searching and selecting:</ins>
+* Search and/or choose the wanted algorithm.
 
-### `npm test`
+<ins>Handle data:</ins>
+* Menually insert data as input for the selected algorithm.
+* Alternatively, choose automated mode for random input.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<ins>Learn how it works:</ins>
+* Select algorithm speed.
+* Enjoy the animated visuallization of the selected algorithm.
+* You can:
+  * pause
+  * start/continue
+  * reset
+  * skip to end
+  * slow-down/speed-up
+* Watch the code lines in real time.
 
-### `npm run build`
+<ins>Read implementaion:</ins>
+  * C++
+  * JS
+  * Python
+---
+### `Time Management:`
+#### `Must have:`
+* At leat 3 algorithm animations.
+* Automated/menual data insertion.
+* Codes in 3 languages: 
+  * C++
+  * JavaScript
+  * Python
+#### `Nice to have:`
+* Tracking option ("Debug").
+* Controlling the algorithm speed.
+#### `Maybe in the future:`
+* Social forum for signed in participants.
+* Enable open source community.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `CONTACT INFO`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Name          | Email                |
+| ------------- | -------------------- |
+| Netanel Mazuz | netazuz@gmail.com    |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- links -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[netlify](https://nifty-goodall-799e83.netlify.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[github](https://github.com/CodePro-art/visual-algo)

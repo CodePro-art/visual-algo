@@ -1,0 +1,26 @@
+/* ======================================= */
+/* ========== IMPORT CSS FILES: ========== */
+/* ======================================= */
+
+@import "./Variables.css";
+@import "./Layout.css";
+
+/* ======================================= */
+/*  ========== RESET CSS ================= */
+/* ======================================= */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.algo-header{
+  height: 40px;
+  padding: 0px 40px;
+  background-color: var(--color-grey);
+}
