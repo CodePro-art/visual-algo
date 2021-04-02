@@ -3,10 +3,11 @@
 /* ======================================= */
 
 html{
-  --color-bg: #ffffff;
-  --color-black: #222;
-  --color-grey: #444;
-  --color-yellow: #ffe23f;
+  --dark: #222;
+  --dark-gray: #333;
+  --light-gray: #ccc;
+  --yellowish: #ffe23f;
+  --softblue: rgb(98, 161, 255);
 }
 
 
