@@ -7,7 +7,8 @@ html{
   --dark-gray: #333;
   --light-gray: #ccc;
   --yellowish: #ffe23f;
-  --softblue: rgb(98, 161, 255);
+  --soft-blue: rgb(98, 161, 255);
+  --light-blue: rgb(154, 218, 255);
 }
 
 
