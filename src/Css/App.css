@@ -10,7 +10,9 @@
 /* ======================================= */
 /* ============ IMPORT FONTS: ============ */
 /* ======================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
 
 /* ======================================= */
 /*  =========== RESET CSS ================ */
@@ -26,7 +28,7 @@ a {
   color: #fff;
 }
 .App{
-  height: 100vh;
-  background-color: antiquewhite;
+  height: auto;
+  background-color: rgb(255, 255, 255);
 }
 

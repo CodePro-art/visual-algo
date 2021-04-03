@@ -17,9 +17,11 @@
   color: #fff;
   font-family: 'New Tegomin', serif;
 }
-.secondary{
-  color: var(--soft-blue);
+.lg-logo{
+  font-size: 3rem;
+  font-family: 'New Tegomin', serif;
 }
+
 
 .right-side-nav{
   display: flex;
