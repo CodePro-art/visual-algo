@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import images from './images';
 import Card from './Card';
+import Search from '../Searchbar/Searchbar';
 
 export default class AlgoCards extends Component {
   
@@ -16,7 +17,9 @@ export default class AlgoCards extends Component {
             <span className="primery">VISU</span> 
             <span className="secondary">ALGO</span>
           </a>
+          <p className="subtext">visualising data structures and algorithms through animation</p>
         </div>
+        <Search/>
         <ul className="algo-list">
           <li className="card-viz">
             {this.renderCards(images)}

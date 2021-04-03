@@ -5,14 +5,15 @@
 @import "./Variables.css";
 @import "./Header.css";
 @import "./Footer.css";
-@import "./Card.css";
+@import "./Main.css";
+@import "./Searchbar.css";
 
 /* ======================================= */
 /* ============ IMPORT FONTS: ============ */
 /* ======================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 /* ======================================= */
 /*  =========== RESET CSS ================ */
@@ -29,6 +30,6 @@ a {
 }
 .App{
   height: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: antiquewhite;
 }
 

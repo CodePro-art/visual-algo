@@ -5,7 +5,8 @@ export default class Header extends Component {
     return (
       <header className="algo-header">
         <nav className="navbar">
-          <a className="logo" href="/">VISU
+          <a className="logo" href="/">
+            <span className="primery">VISU</span>
             <span className="secondary">ALGO</span>
           </a>
 
