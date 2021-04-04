@@ -13,8 +13,7 @@
 /* ======================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 /* ======================================= */
 /*  =========== RESET CSS ================ */
 /* ======================================= */
@@ -24,7 +23,8 @@
   box-sizing: border-box;
 }
 
-a {
+footer a ,
+header a{
   text-decoration: none;
   color: #fff;
 }

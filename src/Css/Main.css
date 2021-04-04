@@ -3,6 +3,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .algo-list{
   display: flex;
   width: auto;
@@ -19,6 +20,7 @@
 .card-viz >*{
   margin: 10px;
 }
+
 .algo-card{
   width:fit-content;
   height: auto;
@@ -32,6 +34,32 @@
   justify-content: center;
   align-items: center;
 }
+.lg-logo{
+  font-size: 3rem;
+  font-family: 'New Tegomin', serif;
+  text-decoration: none;
+}
+
 .card-img{
   border: 1px solid var(--dark-gray);
+}
+
+.card-info a{
+  text-decoration: none;
+}
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-link{
+  background-color: rgb(231, 226, 214);
+  padding: 2px 4px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.card-link:hover{
+  background-color: rgb(206, 198, 180);
 }

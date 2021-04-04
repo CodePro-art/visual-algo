@@ -20,11 +20,12 @@ html{
 }
 
 .primery{
+  color: #fff;
   text-shadow: 
-  -1px 0 rgb(139, 87, 18),
-   0 1px rgb(59, 51, 40),
-  1px 0 rgb(144, 116, 78),
-   0 -1px rgb(114, 82, 42);
+  -1px 0 #555,
+   0 1px #555,
+  1px 0 #555,
+   0 -1px #555;
 }
 
 .subtext{
