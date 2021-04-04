@@ -55,7 +55,6 @@
 
 .card-link,
 .t-link{
-  
   padding: 2px 4px;
   border-radius: 10px;
   transition: .3s;
@@ -70,6 +69,9 @@
 .card-link:hover{
   background-color: rgb(206, 198, 180);
 }
+.t-link:hover{
+  background-color: rgb(206, 212, 113);
+}
 
 .tags-container{
   position: relative;
@@ -81,31 +83,29 @@
   display: flex;
   flex-wrap: wrap;
   width: 240px;
-  height: 30px;
-  background-color: rgb(241, 241, 241);
-  border:1px solid #ccc;
+  max-height: 30px;
+  background-color: rgba(241, 241, 241,0.9);
+  border:1px solid #ddd;
+  border-radius: 2px;
   margin: 10px 0px;
   overflow: hidden;
+  box-shadow: 0 0 5px var(--light-gray);
 }
 .tags:hover{
-  animation: mymove .3s forwards;
+  max-height: 500px;
+    transition: max-height 0.5s ease-in;
 }
 
 .filter{
-  margin: 5px 5px 5px 0px;
-  background-color: #ccc;
+  margin: 5px 5px 5px 1px;
+  background-color: rgb(231, 226, 214);
   padding: 0px 4px;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: .3s;
+  box-shadow: 0 0 1px rgb(175, 168, 152);
 }
 
 .filter:hover{
   background-color: #aaa;
   cursor: pointer;
-  
-}
-
-@keyframes mymove {
-  from {height: 30px;}
-  to {height: auto;}
 }

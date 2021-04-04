@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import {Link} from 'react-router-dom';
 
 export default class Card extends Component {
 
@@ -18,7 +19,7 @@ export default class Card extends Component {
     
     return (
       <div className="algo-card">
-        <a href="/">
+        <Link to={`/page/${this.props.link}`}>
           <img
             className="card-img"
             src={this.state.src} 
@@ -28,7 +29,7 @@ export default class Card extends Component {
             onMouseEnter={this.changeSource}
             onMouseLeave={this.changeSource}
           />
-        </a>
+        </Link>
         <div className="card-name">
           <h5 className="card-info">
             <a href="/" className="card-link">

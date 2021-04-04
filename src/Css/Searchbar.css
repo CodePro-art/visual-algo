@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding: 15px 0px;
-  background-color: cornflowerblue;
 }
 .search-bar-container>*{
   margin: 5px 0px;

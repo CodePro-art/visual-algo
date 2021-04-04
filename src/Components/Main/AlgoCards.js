@@ -5,7 +5,7 @@ import Card from './Card';
 export default class AlgoCards extends Component {
   
   renderCards = arr => arr.map(({id, sta, src, title, tags}) =>
-    <Card key={id} src={src} sta={sta} title={title} tags={tags} />)
+    <Card key={id} src={src} sta={sta} title={title} tags={tags}/>)
 
   render() {
 
