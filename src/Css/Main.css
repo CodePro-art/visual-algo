@@ -24,7 +24,7 @@
 .algo-card{
   width:fit-content;
   height: auto;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   background-color: #fff;
   border: 1px solid var(--dark-gray);
 }
@@ -53,13 +53,59 @@
   justify-content: space-between;
 }
 
-.card-link{
-  background-color: rgb(231, 226, 214);
+.card-link,
+.t-link{
+  
   padding: 2px 4px;
   border-radius: 10px;
   transition: .3s;
 }
-
+.t-link{
+  background-color: rgb(237, 243, 157);
+}
+.card-link{
+  background-color: rgb(231, 226, 214);
+  font-weight:bold;
+}
 .card-link:hover{
   background-color: rgb(206, 198, 180);
+}
+
+.tags-container{
+  position: relative;
+  width: 240px;
+  height: 30px;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  width: 240px;
+  height: 30px;
+  background-color: rgb(241, 241, 241);
+  border:1px solid #ccc;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+.tags:hover{
+  animation: mymove .3s forwards;
+}
+
+.filter{
+  margin: 5px 5px 5px 0px;
+  background-color: #ccc;
+  padding: 0px 4px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.filter:hover{
+  background-color: #aaa;
+  cursor: pointer;
+  
+}
+
+@keyframes mymove {
+  from {height: 30px;}
+  to {height: auto;}
 }

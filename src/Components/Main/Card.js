@@ -12,7 +12,7 @@ export default class Card extends Component {
     this.setState({src: src, static: !this.state.static})
   }
 
-  renderTags = () => {}
+  renderTags = arr => arr.map(tag => <span className="filter">{tag}</span>)
 
   render() {
     
@@ -34,13 +34,16 @@ export default class Card extends Component {
             <a href="/" className="card-link">
               {this.props.title}
             </a>
-            <a href="/" className="card-link">Training</a>
+            <a href="/" className="t-link">Training</a>
           </h5>
           
         </div>
-        <div className="tags">
-          <span className="filter">array</span>
+        <div className="tags-container">
+          <div className="tags">
+            {this.renderTags(this.props.tags)}
+          </div>
         </div>
+        
       </div>
     )
   }
