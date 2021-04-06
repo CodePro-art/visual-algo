@@ -13,13 +13,13 @@ export default class Card extends Component {
     this.setState({src: src, static: !this.state.static})
   }
 
-  renderTags = arr => arr.map(tag => <span className="filter">{tag}</span>)
+  renderTags = arr => arr.map((tag,i) => <span key={i} className="filter">{tag}</span>)
 
   render() {
     
     return (
       <div className="algo-card">
-        <Link to={`/page/${this.props.link}`}>
+        <Link to={`/page/${this.props.link}`} id={this.props.link}>
           <img
             className="card-img"
             src={this.state.src} 
@@ -32,9 +32,9 @@ export default class Card extends Component {
         </Link>
         <div className="card-name">
           <h5 className="card-info">
-            <a href="/" className="card-link">
+            <Link className="card-link" to={`/page/${this.props.link}`}>
               {this.props.title}
-            </a>
+            </Link>
             <a href="/" className="t-link">Training</a>
           </h5>
           

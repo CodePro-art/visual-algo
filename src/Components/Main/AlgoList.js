@@ -1,0 +1,28 @@
+const algoList = [
+  { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Recursive Bubble Sort","Insertion Sort","Recursive Insertion Sort","Merge Sort","Iterative Merge Sort","Quick Sort","Iterative Quick Sort","Heap Sort","Counting Sort","Radix Sort","Bucket Sort","ShellSort","TimSort","Comb Sort","Pigeonhole Sort","Cycle Sort","Cocktail Sort","Strand Sort","Bitonic Sort","Pancake Sort","Binary Insertion Sort","Permutaion(Bogo) Sort","Gnome Sort","Sleep Sort - The King of Laziness","Structure Sort","Stooge Sort","Tag Sort","Tree Sort","Cartesian Tree Sort","Odd-Even Sort/Brick Sort","QuickSort on Singly Linked List","Quick Sort on Doubly Linked List","3-Way QuickSort","Merge Sort for Linked Lists","Merge Sort for Doubly Linkes List","3-Way Merge Sort"] },
+  { id: 2,  title: 'Bitmask',            list: ["Set S","Set Bit","Check Bit","Toggle Bit","Clear Bit","Least Significant Bit"] },
+  { id: 3,  title: 'Linked List',        list: ["Create","Search","Insert","Remove"] },
+  { id: 4,  title: 'Hash Table',         list: ["Linear Probing","Quadratic Probing","Double Hashing","Seperate Chaining"] },
+  { id: 5,  title: 'Binary Heap',        list: ["Create - O(N logN)","Create - O(N)","Insert(V)","ExtractMax()","HeapSort()"] },
+  { id: 6,  title: 'Binary Search Tree', list: ["Create","Search(V)","Insert(V)","Remove(V)","Pred-/Succ-essor(V)","Tree Traversal"] },
+  { id: 7,  title: 'Graph Structures',   list: ["U/U: Disjoint","U/U: Tree","U/U: Binary Tree","U/U: Bipartite","U/U: Knight Jump","U/W: K5 Complete","U/W: Star","D/U: Cyclic","D/W: Four 0->4 Paths"] },
+  { id: 8,  title: 'Union-Find DS',      list: ["Initialize(N)","FindSet(i)","IsSameSet(i,j)","UnionSet(i,j)"] },
+  { id: 9,  title: 'Segment Tree',       list: ["Create","Range of Query","Range Update"] },
+  { id: 10, title: 'Fenwick Tree',       list: ["Create","RSQ/Query","Update"] },
+  { id: 11, title: 'Recursion Tree/DAG', list: ["Recursion Tree","Recursion DAG (DP)"] },
+  { id: 12, title: 'Graph Traversal',    list: ["Draw Graph","Example Graphs","Depth-First Search(s)","Breath-First Search","Topological Sort","Bipartite Graph Check","Cut Vertex & Bridge","SCC Algoritms","2-SAT Checker"] },
+  { id: 13, title: 'Min Spanning Tree',  list: ["Draw Graph","Example Graphs","Kruskal's Algorithms","Prim's Algorithm(s)"] },
+  { id: 14, title: 'SS Shortest Paths',  list: ["Draw Graph","Example Graphs","Bellman Ford's(s)","BFS Algorithm(s)","Dijkstra's Algorithm(s)","DFS Algorithm(s)","Dynamic Programming(s)"] },
+  { id: 15, title: 'Network Flow',       list: ["Draw Graph","Modeling","Example Graph","Compute Max Flow"] },
+  { id: 16, title: 'Graph Matching',     list: ["Draw Graph","Modeling","Examples","Augmenting Path","Graph Matching"] },
+  { id: 17, title: 'Cycle Finding',      list: ["Create","Floyed's tortoise-hare cycle finding"] },
+  { id: 18, title: 'Suffix Tree',        list: ["Build Suffix Tree (instant)","Search","Longest Repeated Substring","Longest Common Substring"] },
+  { id: 19, title: 'Suffix Array',       list: ["Construct Suffix Array","Search","Longest Common Prefix","Longest Repeated Substring","Longest Common Substring"] },
+  { id: 20, title: 'Geometry (Polygon)', list: ["Draw Polygon","Example Polygon","Perimeter(P)","Area(P)","IsConvex(P)","IsPolygon(pt,P)","CutPolygon(ln,P)"] },
+  { id: 21, title: 'Convex Hull',        list: ["Draw Point","GrahmScan(pts)"] },
+  { id: 22, title: 'Min Vertex Cover',   list: ["Draw Graph","Example Graphs","Bruteforce","MVC on Tree","MVC on Tree","MVC on Bipartite Graph","Approximation"] },
+  { id: 23, title: 'Traveling Salesman', list: ["Draw Graph","Example Graphs","Bruteforce","Dynamic Programming","Approximation"] },
+  { id: 24, title: 'Steiner Tree',       list: ["Draw Graph","Example Graphs","Exact","Approximation"] },
+]
+
+export default algoList;

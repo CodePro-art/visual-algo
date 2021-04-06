@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import images from './images';
+import Search from '../Searchbar/Searchbar';
+import images from './Images';
 import Card from './Card';
 
 export default class AlgoCards extends Component {
   
   renderCards = arr => arr.map(({id, sta, src, title, tags}) =>
-    <Card key={id} src={src} sta={sta} title={title} tags={tags}/>)
+    <Card key={id} src={src} sta={sta} title={title} tags={tags} link={id}/>)
 
   render() {
 
     return (
-      <main className="algo-cards-container">  
+      <main className="algo-cards-container"> 
+        <Search/>
         <ul className="algo-list">
           <li className="card-viz">
             {this.renderCards(images)}
