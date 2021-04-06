@@ -1,5 +1,5 @@
 const algoList = [
-  { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Recursive Bubble Sort","Insertion Sort","Recursive Insertion Sort","Merge Sort","Iterative Merge Sort","Quick Sort","Iterative Quick Sort","Heap Sort","Counting Sort","Radix Sort","Bucket Sort","ShellSort","TimSort","Comb Sort","Pigeonhole Sort","Cycle Sort","Cocktail Sort","Strand Sort","Bitonic Sort","Pancake Sort","Binary Insertion Sort","Permutaion(Bogo) Sort","Gnome Sort","Sleep Sort - The King of Laziness","Structure Sort","Stooge Sort","Tag Sort","Tree Sort","Cartesian Tree Sort","Odd-Even Sort/Brick Sort","QuickSort on Singly Linked List","Quick Sort on Doubly Linked List","3-Way QuickSort","Merge Sort for Linked Lists","Merge Sort for Doubly Linkes List","3-Way Merge Sort"] },
+  { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Insertion Sort","Merge Sort","Quick Sort","Heap Sort"] },
   { id: 2,  title: 'Bitmask',            list: ["Set S","Set Bit","Check Bit","Toggle Bit","Clear Bit","Least Significant Bit"] },
   { id: 3,  title: 'Linked List',        list: ["Create","Search","Insert","Remove"] },
   { id: 4,  title: 'Hash Table',         list: ["Linear Probing","Quadratic Probing","Double Hashing","Seperate Chaining"] },
@@ -26,3 +26,5 @@ const algoList = [
 ]
 
 export default algoList;
+
+  // { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Recursive Bubble Sort","Insertion Sort","Recursive Insertion Sort","Merge Sort","Iterative Merge Sort","Quick Sort","Iterative Quick Sort","Heap Sort","Counting Sort","Radix Sort","Bucket Sort","ShellSort","TimSort","Comb Sort","Pigeonhole Sort","Cycle Sort","Cocktail Sort","Strand Sort","Bitonic Sort","Pancake Sort","Binary Insertion Sort","Permutaion(Bogo) Sort","Gnome Sort","Sleep Sort - The King of Laziness","Structure Sort","Stooge Sort","Tag Sort","Tree Sort","Cartesian Tree Sort","Odd-Even Sort/Brick Sort","QuickSort on Singly Linked List","Quick Sort on Doubly Linked List","3-Way QuickSort","Merge Sort for Linked Lists","Merge Sort for Doubly Linkes List","3-Way Merge Sort"] },
