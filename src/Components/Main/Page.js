@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
-// import {Link} from 'react-router-dom';
-// import { BiChevronDown } from 'react-icons/bi';
+import React, { useState,useEffect } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useRouteMatch
+} from "react-router-dom";
+
 import algoList from './AlgoList';
-import ListItem from './ListItem';
+import Code from './Code';
 
 // import algorithms
 import sorting from './Algorithms/algo1';
@@ -32,16 +37,14 @@ import minVertexCover from './Algorithms/algo22';
 import travelingSalesman from './Algorithms/algo23';
 import steinerTree from './Algorithms/algo24';
 
-export default class Page extends Component {
+export default function Page(props) {
 
-  state={
-    title: algoList[this.props.match.params.id-1].title,
-    list: algoList[this.props.match.params.id-1].list,
-    languages: ["C++","Java","JavaScript","Python"],
-    algo: []
-  }
-  
-  algoListById = id => {
+  const [list, setList] = useState(algoList[props.match.params.id-1].list);
+  const [languages, setLang] = useState([]);
+  const [algolist, setAlgo] = useState([]);
+  const [codelist, setCode] = useState([]);
+
+  const algoListById = id => {
     switch(id) {
       case "1":
         return sorting;
@@ -95,43 +98,60 @@ export default class Page extends Component {
     }
   } 
 
-  componentDidMount(){
-    this.setState({algo: this.algoListById(this.props.match.params.id)})
+  const extractCodes = obj => {
+    let extracted = [];
+    extracted.push(obj.cpp);
+    extracted.push(obj.java);
+    extracted.push(obj.js);
+    extracted.push(obj.python);
+    setCode(extracted);
   }
-  
-  renderList = arr => arr.map((content,i) => <ListItem key={i} content={content}/>) 
-  renderTabs = arr => arr.map((content,i) => <Tab key={i}>{content}</Tab>)
-  // renderCodeTabs = arr => arr.map((content,i) => <Tab key={i}>{content}</Tab>)
-  renderPanels = arr => arr.map((content,i) => <TabPanel key={i}><h2>{content}</h2></TabPanel>)
 
-  render() {
-    console.log(this.state.algo);
-    return (
+  // on mount
+  useEffect(() => {
+    console.log(props.match.params.id);
+    setAlgo(algoListById(props.match.params.id))
+    setList(algoList[props.match.params.id-1].list)
+    setLang(["C++","Java","JavaScript","Python"])
+    extractCodes(algoList[props.match.params.id-1].list[0])
+    
+  }, [props.match.params.id])
+
+  const changeCurrentState = (name) =>{
+    extractCodes(algolist.filter( a => a.name === name)[0])
+  }
+
+  const renderTabs = arr => arr.map((content,i) => <Tab key={i} onClick={()=>changeCurrentState(content)}>{content}</Tab>)
+  const renderPanels = arr => arr.map((content,i) => <TabPanel key={i}><h2>{content}</h2></TabPanel>)
+
+  let { path } = useRouteMatch();
+  
+  return (
+    <Router>
       <div className="page-container">
 
         <div className="main-section">
           <div className="animation-area">
             <Tabs>
               <TabList>
-                {this.renderTabs(this.state.list)}
+                {renderTabs(list)}
               </TabList>
 
-              {this.renderPanels(this.state.list)}
-              
+              {renderPanels(list)}
             </Tabs>
           </div>
-          <div className="code-area">
-            <Tabs>
-              <TabList>
-                {this.renderTabs(this.state.list)}
-              </TabList>
 
-              {this.renderPanels(this.state.list)}
-            </Tabs>
+          <div className="aside-section">
+            <Switch>
+              <Route path={path} exact component={()=><Code lang={languages} list={codelist}/>}/> 
+            </Switch>
           </div>
+
         </div>
-
       </div>
-    )
-  }
+    </Router>
+  )
 }
+
+
+

@@ -1,10 +1,10 @@
 const bitmask = [
   {
     name:"Set S",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
+    cpp: `//c++ code for Set S`,
+    java: `//java code for Set S`,
+    python: `//python code for Set S`,
+    js: `//javascript code for Set S`,
     
   },
   {
