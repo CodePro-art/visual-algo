@@ -1,6 +1,6 @@
-const algorithms = [
+const linkedList = [
   {
-    name:"Selection Sort",
+    name:"Create Linked List",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Search Item",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Insert Item",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,23 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Quick Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Heap Sort",
+    name:"Remove Item",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +33,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default linkedList;

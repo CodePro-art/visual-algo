@@ -1,6 +1,6 @@
-const algorithms = [
+const recursionTree = [
   {
-    name:"Selection Sort",
+    name:"Recursion Tree",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,39 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Insertion Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Merge Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Quick Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Heap Sort",
+    name:"Recursion DAG (DP)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +17,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default recursionTree;

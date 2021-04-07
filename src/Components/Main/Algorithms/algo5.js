@@ -1,6 +1,6 @@
-const algorithms = [
+const binaryHeap = [
   {
-    name:"Selection Sort",
+    name:"Create - O(N logN)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Create - O(N)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Insert(V)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"ExtractMax()",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,15 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Heap Sort",
+    name:"HeapSort()",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +41,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default binaryHeap;

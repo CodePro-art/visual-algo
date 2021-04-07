@@ -1,6 +1,6 @@
-const algorithms = [
+const graphMatching = [
   {
-    name:"Selection Sort",
+    name:"Draw Graph",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Modeling",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Examples",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"Augmenting Path",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,15 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
-    cpp: ``,
-    java: ``,
-    python: ``,
-    js: ``,
-    
-  },
-  {
-    name:"Heap Sort",
+    name:"Graph Matching",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +41,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default graphMatching;

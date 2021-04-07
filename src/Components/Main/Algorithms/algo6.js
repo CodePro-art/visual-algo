@@ -1,6 +1,6 @@
-const algorithms = [
+const binarySearchTree = [
   {
-    name:"Selection Sort",
+    name:"Create",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Search(V)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Insert(V)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"Remove(V)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"Pred-/Succ-essor(V)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,7 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"Tree Traversal",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +49,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default binarySearchTree;

@@ -1,5 +1,5 @@
 const algoList = [
-  { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Insertion Sort","Merge Sort","Quick Sort","Heap Sort"] },
+  { id: 1,  title: 'Sorting',            list: ["Selection Sort","Bubble Sort","Insertion Sort","Merge Sort","Quick Sort"] },
   { id: 2,  title: 'Bitmask',            list: ["Set S","Set Bit","Check Bit","Toggle Bit","Clear Bit","Least Significant Bit"] },
   { id: 3,  title: 'Linked List',        list: ["Create","Search","Insert","Remove"] },
   { id: 4,  title: 'Hash Table',         list: ["Linear Probing","Quadratic Probing","Double Hashing","Seperate Chaining"] },
@@ -20,7 +20,7 @@ const algoList = [
   { id: 19, title: 'Suffix Array',       list: ["Construct Suffix Array","Search","Longest Common Prefix","Longest Repeated Substring","Longest Common Substring"] },
   { id: 20, title: 'Geometry (Polygon)', list: ["Draw Polygon","Example Polygon","Perimeter(P)","Area(P)","IsConvex(P)","IsPolygon(pt,P)","CutPolygon(ln,P)"] },
   { id: 21, title: 'Convex Hull',        list: ["Draw Point","GrahmScan(pts)"] },
-  { id: 22, title: 'Min Vertex Cover',   list: ["Draw Graph","Example Graphs","Bruteforce","MVC on Tree","MVC on Tree","MVC on Bipartite Graph","Approximation"] },
+  { id: 22, title: 'Min Vertex Cover',   list: ["Draw Graph","Example Graphs","Bruteforce","MVC on Tree","MVC on Bipartite Graph","Approximation"] },
   { id: 23, title: 'Traveling Salesman', list: ["Draw Graph","Example Graphs","Bruteforce","Dynamic Programming","Approximation"] },
   { id: 24, title: 'Steiner Tree',       list: ["Draw Graph","Example Graphs","Exact","Approximation"] },
 ]

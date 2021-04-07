@@ -1,6 +1,6 @@
-const algorithms = [
+const ssShortestPaths = [
   {
-    name:"Selection Sort",
+    name:"Draw Graph",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Example Graphs",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Bellman Ford's(s)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"BFS Algorithm(s)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"Dijkstra's Algorithm(s)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,15 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"DFS Algorithm(s)",
+    cpp: ``,
+    java: ``,
+    python: ``,
+    js: ``,
+    
+  },
+  {
+    name:"Dynamic Programming(s)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +57,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default ssShortestPaths;

@@ -1,6 +1,6 @@
-const algorithms = [
+const geometry = [
   {
-    name:"Selection Sort",
+    name:"Draw Polygon",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Example Polygon",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Perimeter(P)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"Area(P)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"IsConvex(P)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,15 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"IsPolygon(pt,P)",
+    cpp: ``,
+    java: ``,
+    python: ``,
+    js: ``,
+    
+  },
+  {
+    name:"CutPolygon(ln,P)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +57,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default geometry;

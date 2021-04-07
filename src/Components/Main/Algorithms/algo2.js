@@ -1,6 +1,6 @@
-const algorithms = [
+const bitmask = [
   {
-    name:"Selection Sort",
+    name:"Set S",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Set Bit",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Check Bit",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"Toggle Bit",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"Clear Bit",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,7 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"Least Significant Bit",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +49,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default bitmask;

@@ -1,6 +1,6 @@
-const algorithms = [
+const minVertexCover = [
   {
-    name:"Selection Sort",
+    name:"Draw Graph",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Example Graphs",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Bruteforce",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"MVC on Tree",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"MVC on Bipartite Graph",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,7 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"Approximation",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +49,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default minVertexCover;

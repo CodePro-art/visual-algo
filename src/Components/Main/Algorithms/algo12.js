@@ -1,6 +1,6 @@
-const algorithms = [
+const graphTraversal = [
   {
-    name:"Selection Sort",
+    name:"Draw Graph",
     cpp: ``,
     java: ``,
     python: ``,
@@ -8,7 +8,7 @@ const algorithms = [
     
   },
   {
-    name:"Bubble Sort",
+    name:"Example Graphs",
     cpp: ``,
     java: ``,
     python: ``,
@@ -16,7 +16,7 @@ const algorithms = [
     
   },
   {
-    name:"Insertion Sort",
+    name:"Depth-First Search(s)",
     cpp: ``,
     java: ``,
     python: ``,
@@ -24,7 +24,7 @@ const algorithms = [
     
   },
   {
-    name:"Merge Sort",
+    name:"Breath-First Search",
     cpp: ``,
     java: ``,
     python: ``,
@@ -32,7 +32,7 @@ const algorithms = [
     
   },
   {
-    name:"Quick Sort",
+    name:"Topological Sort",
     cpp: ``,
     java: ``,
     python: ``,
@@ -40,7 +40,31 @@ const algorithms = [
     
   },
   {
-    name:"Heap Sort",
+    name:"Bipartite Graph Check",
+    cpp: ``,
+    java: ``,
+    python: ``,
+    js: ``,
+    
+  },
+  {
+    name:"Cut Vertex & Bridge",
+    cpp: ``,
+    java: ``,
+    python: ``,
+    js: ``,
+    
+  },
+  {
+    name:"SCC Algoritms",
+    cpp: ``,
+    java: ``,
+    python: ``,
+    js: ``,
+    
+  },
+  {
+    name:"2-SAT Checker",
     cpp: ``,
     java: ``,
     python: ``,
@@ -49,4 +73,4 @@ const algorithms = [
   },
 ]
 
-export default algorithms;
+export default graphTraversal;
