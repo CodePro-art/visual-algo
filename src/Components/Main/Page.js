@@ -1,15 +1,12 @@
 import React, { useState,useEffect } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useRouteMatch
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route, useRouteMatch } from "react-router-dom";
+import { FaPlay,FaPause,FaStepBackward,FaStepForward } from "react-icons/fa";
+import useForceUpdate from 'use-force-update';
 import algoList from './AlgoList';
 import Code from './Code';
+import Tile from './Tile';
 
 // import algorithms
 import sorting from './Algorithms/algo1';
@@ -37,13 +34,16 @@ import minVertexCover from './Algorithms/algo22';
 import travelingSalesman from './Algorithms/algo23';
 import steinerTree from './Algorithms/algo24';
 
+const defaultArray = [31, 27,  5, 14, 47, 4, 45, 39, 23, 50];
+
 export default function Page(props) {
 
   const [list, setList] = useState(algoList[props.match.params.id-1].list);
   const [languages, setLang] = useState([]);
   const [algolist, setAlgo] = useState([]);
   const [codelist, setCode] = useState([]);
-
+  const [arr, setArray] = useState(defaultArray);
+  
   const algoListById = id => {
     switch(id) {
       case "1":
@@ -109,42 +109,174 @@ export default function Page(props) {
 
   // on mount
   useEffect(() => {
-    console.log(props.match.params.id);
     setAlgo(algoListById(props.match.params.id))
     setList(algoList[props.match.params.id-1].list)
     setLang(["C++","Java","JavaScript","Python"])
-    extractCodes(algoList[props.match.params.id-1].list[0])
-    
   }, [props.match.params.id])
 
-  const changeCurrentState = (name) =>{
-    extractCodes(algolist.filter( a => a.name === name)[0])
+  useEffect(()=>{
+    if (algolist.length > 0)
+      extractCodes(algolist[props.match.params.id-1])
+  },[algolist,props.match.params.id])
+
+  const changeCurrentState = name =>extractCodes(algolist.filter( a => a.name === name)[0])
+  const renderTabs = arr => arr.map((content,i) => <Tab key={i} onClick={()=>changeCurrentState(content)}>{content}</Tab>)
+  const renderPanels = arr => arr.map((content,i) => <TabPanel key={i}>{renderAnimationBox(content)}</TabPanel>)
+
+  const renderCode = () => {
+    if (codelist.length > 0)
+    return (
+      <Switch>
+        <Route path={path} exact component={()=><Code lang={languages} list={codelist}/>}/> 
+      </Switch>
+    )
   }
 
-  const renderTabs = arr => arr.map((content,i) => <Tab key={i} onClick={()=>changeCurrentState(content)}>{content}</Tab>)
-  const renderPanels = arr => arr.map((content,i) => <TabPanel key={i}><h2>{content}</h2></TabPanel>)
+  const renderAnimationBox = content => {
+    return(
+      <div className="animation-box">
+        <div className="animation-content">
+          {renderArray(arr)}
+        </div>
+        <div className="animation-control">
+          <FaStepBackward size={25} onClick={()=>{}}/>
+          <FaPause size={25} onClick={()=>{}}/>
+          <FaPlay size={25} onClick={()=>{playAnimation(content)}}/>
+          <FaStepForward size={25} onClick={()=>{}}/>
+        </div>
+      </div>
+    )
+  }
+
+  const renderArray = arr => arr.map( (e,i) => <Tile key={i} color={'red'} height={e} ></Tile>)
+  const forceUpdate = useForceUpdate();
+  
+  const playAnimation = () => {
+    insertionSort()
+  }
+  
+// ======================================================================== //
+// ======================= SORT ALGORITHMS ================================ //
+// ======================================================================== //
+
+  // -------------- JS insertion sort algorithm --------------
+  const insertionSort = () => {
+    let n = arr.length;
+      for (let i = 1; i < n; i++) {
+        // Choosing the first element in our unsorted subarray
+        let current = arr[i];
+        // The last element of our sorted subarray
+        let j = i-1; 
+        while ((j > -1) && (current < arr[j])) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = current;
+        setTimeout(() => {
+          console.log(i);
+          setArray(arr)
+          forceUpdate();
+        }, 5000);
+
+        setArray(arr)
+        forceUpdate();
+     
+      }
+    setArray(arr);
+  }
+
+  // -------------- JS bubble sort algorithm -----------------
+  let bubbleSort = (inputArr) => {
+    let len = inputArr.length;
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < len; i++) {
+            if (inputArr[i] > inputArr[i + 1]) {
+                let tmp = inputArr[i];
+                inputArr[i] = inputArr[i + 1];
+                inputArr[i + 1] = tmp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    return inputArr;
+  }
+
+  // -------------- JS merge sort algorithm ------------------
+  function merge(left, right) {
+    let arr = []
+    // Break out of loop if any one of the array gets empty
+    while (left.length && right.length) {
+        // Pick the smaller among the smallest element of left and right sub arrays 
+        if (left[0] < right[0]) {
+            arr.push(left.shift())  
+        } else {
+            arr.push(right.shift()) 
+        }
+    }
+    
+    // Concatenating the leftover elements
+    // (in case we didn't go through the entire left or right array)
+    return [ ...arr, ...left, ...right ]
+  }
+  function mergeSort(array) {
+    const half = array.length / 2
+    
+    // Base case or terminating case
+    if(array.length < 2){
+      return array 
+    }
+    
+    const left = array.splice(0, half)
+    return merge(mergeSort(left),mergeSort(array))
+  }
+
+  // --------------JS quick sort algorithm --------------------
+  const pivot = (arr, start = 0, end = arr.length + 1) => {
+    const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]];
+
+    let pivot = arr[start],
+        pointer = start;
+
+    for (let i = start; i < arr.length; i++) {
+      if (arr[i] < pivot  ) {
+        pointer++;
+        swap(arr, pointer, i);
+      }
+    };
+    swap(arr, start, pointer);
+
+  return pointer;
+  }
+  const quickSort = (arr, start = 0, end = arr.length) => {
+    let pivotIndex = pivot(arr, start, end);
+
+    if (start >= end) return arr;
+      quickSort(arr, start, pivotIndex);
+    quickSort(arr, pivotIndex + 1, end);
+
+    return arr;
+  }
+  // ===================================================================== //
 
   let { path } = useRouteMatch();
   
   return (
     <Router>
       <div className="page-container">
-
         <div className="main-section">
           <div className="animation-area">
             <Tabs>
               <TabList>
                 {renderTabs(list)}
               </TabList>
-
-              {renderPanels(list)}
+              {renderPanels(list,arr)}
             </Tabs>
           </div>
 
           <div className="aside-section">
-            <Switch>
-              <Route path={path} exact component={()=><Code lang={languages} list={codelist}/>}/> 
-            </Switch>
+            {renderCode()}
           </div>
 
         </div>
