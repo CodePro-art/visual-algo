@@ -173,7 +173,6 @@ export default function Page(props) {
         }
         arr[j+1] = current;
         setTimeout(() => {
-          console.log(i);
           setArray(arr)
           forceUpdate();
         }, 5000);
