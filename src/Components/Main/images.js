@@ -48,7 +48,7 @@ import s_img22 from '../../img/s_22.gif';
 import s_img23 from '../../img/s_23.gif';
 import s_img24 from '../../img/s_24.gif';
 
-const images = [
+const Images = [
   
   { id: 1,  sta: s_img1, src: img1,  title: 'Sorting',            tags: ["array","algorithm","bubble","select","insert","selection","insertion","merge","quick","randomized quick","counting","radix","sort","list","data structure","sorting"] },
   { id: 2,  sta: s_img2, src: img2,  title: 'Bitmask',            tags: ["bit manipulation","set","array","list","ds","data structure","bitmask"] },
